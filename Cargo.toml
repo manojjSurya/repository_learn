@@ -1,0 +1,15 @@
+workspace = { members = ["hdfc_care3"] }
+[package]
+name = "app_name"
+version = "1.0.4358"
+authors = ["shashank.676 <shashank.p@surya-soft.com>"]
+
+[dependencies]
+clap = "2.31.2"
+slog-term = "2.4.0"
+slog-async = "2.3.0"
+slog = { version = "2.2.3", features = ["max_level_trace", "release_max_level_trace"] }
+# This rbdate library path is relative so this might be needed to change as per config
+rbdate = { path = "/home/manojj/Rust/package/SuperDB-Batch-1/SuperDB-Batch-1/hdfc/libraries/RBDate"}
+sdb_io = { path= "/home/manojj/Rust/package/SuperDB-Batch-1/SuperDB-Batch-1/hdfc/libraries/sdb_io" }
+calamine="0.15.3"
